@@ -10,7 +10,7 @@ def assign_rooms(array)
   array.collect {|guestName| "Hello, #{guestName}! You'll be assigned to room #{array.index(guestName)+1}!"
 end 
 
-def printer(name)
+def printer(guestName)
   badges = batch_badge_creator(guestName)
   rooms = assign_rooms(guestName)
   badges.each {|badge| puts badge} 
